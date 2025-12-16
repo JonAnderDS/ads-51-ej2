@@ -12,8 +12,6 @@ jobs:
       security-events: write
 
     steps:
-
-      - name: Run Python linter
-        uses: advanced-security/python-lint-code-scanning-action@v1
+      - uses: advanced-security/python-lint-code-scanning-action@v1
         with:
           linter: pylint
